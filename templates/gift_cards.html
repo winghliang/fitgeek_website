@@ -3,7 +3,7 @@
 <head>
 <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,600italic,700,700italic,300italic" rel="stylesheet" type="text/css">
 <meta charset="utf-8">
-<title>Our Store</title>
+<title>Gift Cards</title>
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="../static/css/animate.css" rel="stylesheet" type="text/css">
@@ -30,13 +30,13 @@
                          <li><a href="/">Home</a></li>
                          <li class="dropdown"> <a data-toggle="dropdown" class="dropdown-toggle" href="#">Shop<span class="caret"></span></a>
                               <ul class="dropdown-menu">
-                                   <li class="active"><a href="/our_store">Our Store</a></li>
+                                   <li><a href="/our_store">Our Store</a></li>
                                    <li><a href="/gift_cards">Gift Cards</a></li>
                               </ul>
                          </li>
                          <li><a href="/gait_analysis">Gait Analysis</a></li>
 <!--                          <li><a href="learning_center.html">Learning Center</a></li> -->
-                         <li><a href="/gift_cards">Gift Cards</a></li>
+                         <li class="active"><a href="/gift_cards">Gift Cards</a></li>
                          <li><a href="/about">About</a></li>
                          <li><a href="/contact">Contact</a></li>
                     </ul>
@@ -47,90 +47,96 @@
      </div>
 </header>
 
-<div class="full_page_photo" style="background-image: url(../static/images/store_slide.jpg);">
+<div class="full_page_photo" style="background-image: url(../static/images/gift.JPG);">
+     <div class="container">
+          <section class="call_to_action">
+               <h3 class="animated bounceInDown skincolored">Give a loved one a <strong>Fitgeek fitting</strong>!</h3>
+          </section>
+     </div>
 </div>
 <div class="main">
      <section class="hgroup centered">
           <div class="container">
-               <h1>Our Store</h1>
+               <h1>Gift Cards &amp; Certificates</h1>
+               <h2>Available for Purchase <a href="#instore">In-Store</a> or <a href="#online">Online</a></h2>
                <ul class="breadcrumb pull-right">
                     <li><a href="index.html">Home</a> </li>
-                    <li class="active">Our Store</li>
+                    <li class="active">Gift Cards</li>
                </ul>
           </div>     
      </section>
      <section class="service_teasers">
           <div class="container">
-               <div class="service_teaser store_item">
+               <div class="service_teaser" id="instore">
                     <div class="row">
-                         <div class="service_photo col-sm-4 col-md-4" id="shoes_teaser">
-                              <figure style="background-image:url(../static/images/Shoe_Wall_medium.jpg)"></figure>
-                         </div>
-                         <div class="service_details col-sm-8 col-md-8">
-                              <h2 class="section_header skincolored"><b>Shoes</b><small>for running, walking, hiking, &amp; staying fit</small></h2>
-                              <p>With all the shoes out there, how do you pick the one that's right for you? We've carefully curated the latest and greatest running, walking, hiking, and fitness shoes from <strong>Asics, Brooks, Mizuno, Saucony, New Balance, Merrel, Hoka One One, and Altra</strong>. And, unlike the big box store or the wierdos on the internet, we <strong>know those shoes inside out</strong> and can help you find the <strong>perfect pair</strong>.</p>
-                         </div>
-                    </div>
-               </div>
-               <div class="service_teaser right">
-                    <div class="row">
-                         <div class="service_details col-sm-8 col-md-8">
-                              <h2 class="section_header skincolored"><b>Sandals</b><small>because even your running shoes need a break</small></h2>
-                              <p>We've got some awesome sandals for when you just don't feel like going for a run.  We carry an assortment of <a href="www.oofos.com"><strong>Oofos</strong></a> recovery sandals will make you feel like you're walking on clouds. Come in and try a pair - you'll wonder how you ever managed to walk around in other sandals before!</p>
-                         </div>
                          <div class="service_photo col-sm-4 col-md-4">
-                              <figure style="background-image:url(../static/images/sandals_medium.JPG)"></figure>
+                              <figure style="background-image:url(../static/images/gift_card.jpeg)"></figure>
+                         </div>
+                         <div class="service_details col-sm-8 col-md-8 analysis-text">
+                              <h2 class="section_header skincolored">Purchasing <b>In-Store</b></h2>
+                              <p>Know someone who really needs to be properly fitted for a pair of shoes?  Give them Fitgeek gift card -- their feet will thank you!</p>
+                              <p>Gift cards are available in any denomination.  Come in to the store to pick up your gift card, or call us at 408-418-5888 to purchase a gift card over the phone and we will mail it to any address you like!</p>
+                         </div>
+                    </div>
+               </div>
+               <div class="service_teaser right" id="online">
+                    <div class="row">
+                         <div class="service_details col-sm-8 col-md-8 wow animated slideInLeft analysis-text">
+                              <h2 class="section_header skincolored">Purchasing <b>Online</b></h2>
+                              <p>Don't have time (or can't) to come to our store?  No problem! Fill out the form below to begin purchasing a gift certificate from the comfort of your own home!</p>
+                         </div>
+                         <div class="service_photo col-sm-4 col-md-4 wow animated slideInRight">
+                              <a href="#analysis_video"><figure id="video_preview" style="background-image:url(../static/images/gift_card.jpeg)"></figure></a>
                          </div>
                     </div>
                </div>
 
-               <div class="service_teaser store_item">
-                    <div class="row">
-                         <div class="service_photo col-sm-4 col-md-4" id="insoles_teaser">
-                              <figure style="background-image:url(../static/images/insoles_medium.jpg)"></figure>
-                         </div>
-                         <div class="service_details col-sm-8 col-md-8">
-                              <h2 class="section_header skincolored"><b>Insoles</b></h2>
-                              <p>Sometimes your shoes just need a companion, whether it's for some extra support, cushoining, or both. We carry insoles from <strong>Superfeet, Spenco, and SofSole</strong> that'll make your new or existing shoes feel just right.</p>
-                         </div>
+               <div class="col-sm-12">
+                    <div class="gift_certificate_form">
+                         <form>
+                              <fieldset>
+                                   <div class="gift_sign">
+                                        <h3>Purchase Gift Certificate Online</h3>
+                                        <a><i class="fa fa-gift"></i></a> 
+                                   </div>
+                                   <p class="gift_title text-danger">* Indicates required field</p>
+                                   <div class="row">
+                                        <div class="col-lg-2"></div>
+                                        <div class="col-lg-8">
+                                             <p class="text-left"><span class="asterisk">* </span>Recipient's Name:</p>
+                                             <input name="recipient_name" class="form-control" required type="text">
+
+                                             <p class="text-left"><span class="asterisk">* </span>Recipient's Email Address:</p>
+                                             <input name="recipient_email" class="form-control" required type="email">
+
+                                             <p class="text-left"><span class="asterisk">* </span>Your Name:</p>
+                                             <input name="giver_name" class="form-control" required type="text">
+
+                                             <p class="text-left"><span class="asterisk">* </span>Your Email Address:</p>
+                                             <input name="giver_email" class="form-control" required type="email">
+
+                                             <p class="text-left">Message (Optional):</p>
+                                             <textarea name="message" class="form-control"></textarea>
+
+                                             <p class="text-left"><span class="asterisk">* </span>Amount (must be whole number greater or equal to $1):</p>
+                                             <input name="value" class="form-control" required type="number" min="1" step="1">
+
+                                             <div class="checkbox">
+                                                  <label class="">
+                                                       <input name="checkboxes" value="Option one" type="checkbox" required>
+                                                       I understand that gift certificates are not refundable.</label>
+                                             </div>
+                                        </div>
+                                        <div class="col-lg-2"></div>
+                                   </div>
+                                   <button type="submit" class="btn btn-success btn-lg">Add to Cart</button>
+                              </fieldset>
+                         </form>
                     </div>
                </div>
 
-               <div class="service_teaser right">
-                    <div class="row">
-                         <div class="service_details col-sm-8 col-md-8" id="injury_teaser">
-                              <h2 class="section_header skincolored"><b>Injury Treatment &amp; Prevention</b></h2>
-                              <p>Got an ailment? Let Fitgeek help find the solution. We have knee wraps, ankle sleeves, foam rollers, massage sticks, plantar fasciitis sleeves, kineseo tape, and so much more!</p>
-                         </div>
-                         <div class="service_photo col-sm-4 col-md-4">
-                              <figure style="background-image:url(../static/images/injury_medium.JPG)"></figure>
-                         </div>
-                    </div>
-               </div>
 
-               <div class="service_teaser store_item">
-                    <div class="row">
-                         <div class="service_photo col-sm-4 col-md-4" id="apparel_teaser">
-                              <figure style="background-image:url(../static/images/apparel_medium.JPG)"></figure>
-                         </div>
-                         <div class="service_details col-sm-8 col-md-8">
-                              <h2 class="section_header skincolored"><b>Apparel &amp; Accessories</b></h2>
-                              <p>Fitgeek carries an assortment of casual, athletic, and performance apparel &amp; acessorties to help you get through those workouts comfortably. We've got hats, t-shirts, hoodies, shorts, pants, socks, compression gear, and much much more! Brands we carry include <strong>Addady; Amphipod; Asics; Balega; Brooks; Camelbak; CWX; Feetures; FlipBelt; Fuel Belt; Garmin; Headsweats; Mizuno; Pro-Tec Athletics; Spenco; The Stick; Superfeet; 2XU; Rocktape; Tifosi; 2Toms; Wright Socks; and Zensah</strong>.</p>
-                         </div>
-                    </div>
-               </div>
 
-               <div class="service_teaser right">
-                    <div class="row">
-                         <div class="service_details col-sm-8 col-md-8" id="sale_teaser">
-                              <h2 class="section_header skincolored"><b>Sale Items</b></h2>
-                              <p>We have a variety of old-model shoes and other gear, up to 50% off year-round.  We always have a selection of shoes that's <strong>30-40% off</strong>.</p>
-                         </div>
-                         <div class="service_photo col-sm-4 col-md-4">
-                              <figure style="background-image:url(../static/images/sale_medium.jpg)"></figure>
-                         </div>
-                    </div>
-               </div>
           </div>
      </section>
 
