@@ -4,6 +4,7 @@
 <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,600italic,700,700italic,300italic" rel="stylesheet" type="text/css">
 <meta charset="utf-8">
 <title>Gift Cards</title>
+<meta name="description" content="Fitgeek Sports gift cards and certificates">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="../static/css/animate.css" rel="stylesheet" type="text/css">
@@ -50,7 +51,7 @@
 <div class="full_page_photo" style="background-image: url(../static/images/gift.JPG);">
      <div class="container">
           <section class="call_to_action">
-               <h3 class="animated bounceInDown skincolored">Give a loved one a <strong>Fitgeek fitting</strong>!</h3>
+               <h3 class="animated bounceInDown skincolored">Give a loved one a <strong>Fitgeek fitting!</strong></h3>
           </section>
      </div>
 </div>
@@ -84,6 +85,7 @@
                          <div class="service_details col-sm-8 col-md-8 wow animated slideInLeft analysis-text">
                               <h2 class="section_header skincolored">Purchasing <b>Online</b></h2>
                               <p>Don't have time (or can't) to come to our store?  No problem! Fill out the form below to begin purchasing a gift certificate from the comfort of your own home!</p>
+                              <p>A gift certificate will be emailed to the recipient after your order has been paid for, and a receipt will be emailed to you. If you would like to give the gift certificate to the recipient yourself, simply put your own email as the Recipient's Email and the certificate will be emailed to you.</p>
                          </div>
                          <div class="service_photo col-sm-4 col-md-4 wow animated slideInRight">
                               <a href="#analysis_video"><figure id="video_preview" style="background-image:url(../static/images/gift_card.jpeg)"></figure></a>
@@ -92,8 +94,31 @@
                </div>
 
                <div class="col-sm-12">
-                    <div class="gift_certificate_form">
-                         <form>
+                    <div id="gift_certificate_form">
+
+                    <!-- Message form validation message -->
+                         {% with messages = get_flashed_messages(with_categories=true) %}
+                              {% if messages %}
+                                   {% if messages[0][0] == 'invalid_message' %}
+                                        <script type="text/javascript">
+                                             alert("Please enter all required information and try again.")
+                                        </script>
+                                        <div class="alert alert-danger contact-form-message">
+                                        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                                        <p><strong>Please correct the following and try again:</strong></p>
+                                        <ul>
+                                             {% for category, message in messages %}                                        
+                                                  <li class="text-danger"> {{message}} </li>
+                                             {% endfor %}
+                                        </ul>
+                                        </div>
+                                   {% endif %}
+
+                              {% endif %}
+                         {% endwith %}
+
+
+                         <form action="/add_to_cart" method="post">
                               <fieldset>
                                    <div class="gift_sign">
                                         <h3>Purchase Gift Certificate Online</h3>
@@ -107,6 +132,7 @@
                                              <input name="recipient_name" class="form-control" required type="text">
 
                                              <p class="text-left"><span class="asterisk">* </span>Recipient's Email Address:</p>
+                                             <p class="text-left text-danger">(Enter your own email if you'd like the certificate to be emailed to you instead of the recipient.)</p>
                                              <input name="recipient_email" class="form-control" required type="email">
 
                                              <p class="text-left"><span class="asterisk">* </span>Your Name:</p>
@@ -119,7 +145,7 @@
                                              <textarea name="message" class="form-control"></textarea>
 
                                              <p class="text-left"><span class="asterisk">* </span>Amount (must be whole number greater or equal to $1):</p>
-                                             <input name="value" class="form-control" required type="number" min="1" step="1">
+                                             <input name="gift_amount" class="form-control" placeholder="$ USD" required type="number" min="1" step="1">
 
                                              <div class="checkbox">
                                                   <label class="">
@@ -148,7 +174,7 @@
                          <div class="col-sm-6">
                               <blockquote>
                                    <p id="yelp_text">Check Us Out On Yelp - 100+ 5-star reviews!</p>
-                                   <a href="http://www.yelp.com/biz/fitgeek-sports-cupertino" target="blank"> <img src="http://dyn.yelpcdn.com/extimg/rrc/jhMatia8HiCUQNOr3U-9JA.png" width="125" height="55" alt="Fitgeek Sports" /></a>
+                                   <a href="http://www.yelp.com/biz/fitgeek-sports-cupertino" target="blank"> <img src="http://dyn.yelpcdn.com/extimg/rrc/jhMatia8HiCUQNOr3U-9JA.png" width="125" height="55" alt="Fitgeek Sports Yelp Badge"></a>
                               </blockquote>
                          </div>
 
