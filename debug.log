@@ -1,0 +1,69 @@
+Exception on /process_stripe [POST]
+Traceback (most recent call last):
+  File "/home/fg_admin/fitgeek_website/fitgeek_env/local/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/fg_admin/fitgeek_website/fitgeek_env/local/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/fg_admin/fitgeek_website/fitgeek_env/local/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/fg_admin/fitgeek_website/fitgeek_env/local/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/fg_admin/fitgeek_website/fitgeek_env/local/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./server.py", line 193, in process_stripe
+    pdf_certificate.image('/home/fg_admin/Desktop/fg_website/blank_certificate/fitgeek_gift_certificate.jpg', 15, 15, 185)
+  File "/home/fg_admin/fitgeek_website/fitgeek_env/local/lib/python2.7/site-packages/fpdf/fpdf.py", line 150, in wrapper
+    return fn(self, *args, **kwargs)
+  File "/home/fg_admin/fitgeek_website/fitgeek_env/local/lib/python2.7/site-packages/fpdf/fpdf.py", line 969, in image
+    info=self._parsejpg(name)
+  File "/home/fg_admin/fitgeek_website/fitgeek_env/local/lib/python2.7/site-packages/fpdf/fpdf.py", line 1738, in _parsejpg
+    self.error('Missing or incorrect image file: %s. error: %s' % (filename, str(exception())))
+  File "/home/fg_admin/fitgeek_website/fitgeek_env/local/lib/python2.7/site-packages/fpdf/fpdf.py", line 227, in error
+    raise RuntimeError('FPDF error: '+msg)
+RuntimeError: FPDF error: Missing or incorrect image file: /home/fg_admin/Desktop/fg_website/blank_certificate/fitgeek_gift_certificate.jpg. error: [Errno 2] No such file or directory: '/home/fg_admin/Desktop/fg_website/blank_certificate/fitgeek_gift_certificate.jpg'
+Exception on /process_stripe [POST]
+Traceback (most recent call last):
+  File "/home/fg_admin/fitgeek_website/fitgeek_env/local/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/fg_admin/fitgeek_website/fitgeek_env/local/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/fg_admin/fitgeek_website/fitgeek_env/local/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/fg_admin/fitgeek_website/fitgeek_env/local/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/fg_admin/fitgeek_website/fitgeek_env/local/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./server.py", line 193, in process_stripe
+    pdf_certificate.image('/home/fg_admin/fg_website/blank_certificate/fitgeek_gift_certificate.jpg', 15, 15, 185)
+  File "/home/fg_admin/fitgeek_website/fitgeek_env/local/lib/python2.7/site-packages/fpdf/fpdf.py", line 150, in wrapper
+    return fn(self, *args, **kwargs)
+  File "/home/fg_admin/fitgeek_website/fitgeek_env/local/lib/python2.7/site-packages/fpdf/fpdf.py", line 969, in image
+    info=self._parsejpg(name)
+  File "/home/fg_admin/fitgeek_website/fitgeek_env/local/lib/python2.7/site-packages/fpdf/fpdf.py", line 1738, in _parsejpg
+    self.error('Missing or incorrect image file: %s. error: %s' % (filename, str(exception())))
+  File "/home/fg_admin/fitgeek_website/fitgeek_env/local/lib/python2.7/site-packages/fpdf/fpdf.py", line 227, in error
+    raise RuntimeError('FPDF error: '+msg)
+RuntimeError: FPDF error: Missing or incorrect image file: /home/fg_admin/fg_website/blank_certificate/fitgeek_gift_certificate.jpg. error: [Errno 2] No such file or directory: '/home/fg_admin/fg_website/blank_certificate/fitgeek_gift_certificate.jpg'
+Exception on /process_stripe [POST]
+Traceback (most recent call last):
+  File "/home/fg_admin/fitgeek_website/fitgeek_env/local/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/fg_admin/fitgeek_website/fitgeek_env/local/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/fg_admin/fitgeek_website/fitgeek_env/local/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/fg_admin/fitgeek_website/fitgeek_env/local/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/fg_admin/fitgeek_website/fitgeek_env/local/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./server.py", line 193, in process_stripe
+    pdf_certificate.image('/home/fg_admin/fitgeek_website/blank_certificate/fitgeek_gift_certificate.jpg', 15, 15, 185)
+  File "/home/fg_admin/fitgeek_website/fitgeek_env/local/lib/python2.7/site-packages/fpdf/fpdf.py", line 150, in wrapper
+    return fn(self, *args, **kwargs)
+  File "/home/fg_admin/fitgeek_website/fitgeek_env/local/lib/python2.7/site-packages/fpdf/fpdf.py", line 969, in image
+    info=self._parsejpg(name)
+  File "/home/fg_admin/fitgeek_website/fitgeek_env/local/lib/python2.7/site-packages/fpdf/fpdf.py", line 1738, in _parsejpg
+    self.error('Missing or incorrect image file: %s. error: %s' % (filename, str(exception())))
+  File "/home/fg_admin/fitgeek_website/fitgeek_env/local/lib/python2.7/site-packages/fpdf/fpdf.py", line 227, in error
+    raise RuntimeError('FPDF error: '+msg)
+RuntimeError: FPDF error: Missing or incorrect image file: /home/fg_admin/fitgeek_website/blank_certificate/fitgeek_gift_certificate.jpg. error: [Errno 2] No such file or directory: '/home/fg_admin/fitgeek_website/blank_certificate/fitgeek_gift_certificate.jpg'
