@@ -9414,3 +9414,21 @@ p.gift_title {
 .checkout-error-message p {
   font-size: 1.1em;
 }
+
+#privacy_policy h2,
+#privacy_policy h4 {
+  font-weight: bold;
+}
+
+#faq h2,
+#faq h4 {
+  font-weight: bold;
+}
+
+#faq h4 {
+  margin-top: 25px;
+}
+
+#faq p {
+  font-size: 1.2em;
+}

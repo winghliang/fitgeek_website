@@ -3,8 +3,8 @@
 <head>
 <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,600italic,700,700italic,300italic" rel="stylesheet" type="text/css">
 <meta charset="utf-8">
-<title>Order Complete - Thank You!</title>
-<meta name="description" content="Gift Certificate order complete">
+<title>Frequently Asked Questions</title>
+<meta name="description" content="Frequently asked questions">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="../static/css/animate.css" rel="stylesheet" type="text/css">
@@ -36,12 +36,12 @@
                               </ul>
                          </li>
                          <li><a href="/gait_analysis">Gait Analysis</a></li>
-                         <li class="active"><a href="/gift_cards">Gift Cards</a></li>
+                         <li><a href="/gift_cards">Gift Cards</a></li>
                          <li><a href="/about">About</a></li>
                          <li class="dropdown"> <a data-toggle="dropdown" class="dropdown-toggle" href="#">Contact<span class="caret"></span></a>
                               <ul class="dropdown-menu">
                                    <li><a href="/contact">Contact, Hours, &amp; Directions</a></li>
-                                   <li><a href="/faq">Frequently Ask Questions</a></li>
+                                   <li class="active"><a href="/faq">Frequently Ask Questions</a></li>
                               </ul>
                          </li>
                     </ul>
@@ -52,57 +52,50 @@
 </header>
 
 <div class="main">
-     <section class="service_teasers">
-          <div class="container">
-               <div class="col-sm-12 cart_contents">
 
-                    <div class="gift_sign">
-                         <h3 class="text-center">Your gift certificate order is complete.  Thank You!</h3>
-                         <p class="text-center"><a><i class="fa fa-gift"></i></a></p> 
-                         <p class="gift_title text-success text-center">* A gift certificate has been emailed to the recipient email indicated below, and a receipt has been emailed to your email indicated below. <br> Please print or note the Order Reference Number below for your reference.</p>
-                    </div>
+     <div class="container">
 
-                    <div class="row">
+          <div class="row">
 
-                         <div class="table-responsive">
+               <div class="col-sm-12">
+                    
+                    <section id="faq">
 
-                              <table class="table cart_table">
-                                   <thead class="cart_head">
-                                        <tr>
-                                             <th>Certificate Summary</th>
-                                             <th>Gift Amount</th>
-                                             <th>Order Reference No.</th>
-                                        </tr>
-                                   </thead>
-                                   <tbody>
-                                        <tr class="cart_table_data">
-                                             <td> <span class="table_bold">Recipient Name: </span><br>
-                                                  {{ session['gift_certificate_details']['recipient_name'] }}<br><br>
-                                                  <span class="table_bold">Recipient Email: </span><br>
-                                                  {{ session['gift_certificate_details']['recipient_email'] }}<br><br>
-                                                  <span class="table_bold">Your Name: </span><br>
-                                                  {{ session['gift_certificate_details']['giver_name'] }}<br><br>
-                                                  <span class="table_bold">Your Email: </span><br>
-                                                  {{ session['gift_certificate_details']['giver_email'] }}<br><br>
-                                                  <span class="table_bold">Message: </span><br>
-                                                  {% if 'message' not in session['gift_certificate_details'] %}
-                                                       None
-                                                  {% else %}
-                                                       {{ session['gift_certificate_details']['message'] }}
-                                                  {% endif %}     
-                                             </td>
-                                             <td>$ {{ session['gift_certificate_details']['gift_amount'] }}.00</td>
-                                             <td>{{ session['gift_certificate_number'] }} </td>
-                                        </tr>
+                         <h2 class="text-center">Frequently Asked Questions</h2>
 
-                                   </tbody>
-                              </table>
-                         </div>
-                    </div>
+                         <h4>What is your fit process like?</h4>
+                         <p>Our personalized shoe-fitting process starts with an analysis of your foot type and characteristics, including arch type, length, and width.  We will also perform video analysis of you running on a treadmill using state-of-the-art technology to gather additional information about your specific gait and biomechanics.  For more information on our shoe-fitting process, click <a href="/gait_analysis">here</a>.</h4>
+
+                         <h4>What is the best shoe for running or walking?</h4>
+                         <p>That depends on variety of factors. Everyone’s foot is different, so a great-fitting pair of shoes for one person may not fit the same for another person. With our shoe-fitting process, we try to match your foot to the best shoes for your particular foot.</p>
+
+                         <h4>How long does your shoe fitting process take?</h4>
+                         <p>We can adjust shoe fittings to take as much or as little time as you want or need. A typical fitting takes 15-20 minutes, but we will spend as much time as it takes to find the right shoes for you.</p>
+
+                         <h4>Do I need to make an appointment for a shoe fitting?</h4>
+                         <p>No, you can just walk right in.</p>
+
+                         <h4>How much do you charge for a shoe fitting?</h4>
+                         <p>The shoe fitting is included in your purchase of the shoe; there is no additional charge for a shoe fitting.</p>
+
+                         <p>However, since we spend a lot of time with each customer and do not charge for fittings as a courtesy, we ask that if you intend to only get an analysis and then purchase the shoes we recommend elsewhere, we ask that you have the courtesy of not wasting our time.</p>
+
+                         <h4>How much does your shoes cost?</h4>
+                         <p>Our regular-priced adult shoes range from approximately $85 to $150. All regular-priced, current-model shoes are priced at MSRP (manufacturer’s suggested retail price).  We also have a wide selection of sale shoes, often at 30-50% off.</p>
+
+                         <h4>Can I walk in running shoes?</h4>
+                         <p>Yes! "running" shoes are great for walking because they often provide much more cushioning and support than other types of shoes. We also have shoes that were designed specifically for walking or hiking.</p>
+
+                         <h4>Is Fitgeek a chain?</h4>
+                         <p>No, Fitgeek is an independent, family-owned small business!</p>
+
+                    </section>
 
                </div>
+               
           </div>
-     </section>
+          
+     </div>
 
      <footer>
           <section class="footer_feed_wrapper">
