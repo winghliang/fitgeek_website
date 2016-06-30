@@ -9420,15 +9420,16 @@ p.gift_title {
   font-weight: bold;
 }
 
-#faq h2,
-#faq h4 {
+.body_content h2,
+.body_content h3,
+.body_content h4 {
   font-weight: bold;
 }
 
-#faq h4 {
+.body_content h4 {
   margin-top: 25px;
 }
 
-#faq p {
+.body_content p {
   font-size: 1.2em;
 }
