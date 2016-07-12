@@ -6956,7 +6956,7 @@ header .container {
   right: 15px;
   z-index: 101;
   overflow: hidden;
-  padding: 10px;
+  padding: 12px;
 }
 #social_media_wrapper a {
   text-align: center;
@@ -9432,4 +9432,13 @@ p.gift_title {
 
 .body_content p {
   font-size: 1.2em;
+}
+
+#yelp_badge_header {
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  right: 150px;
+  z-index: 101;
+  overflow: hidden;
 }
