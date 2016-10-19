@@ -130,3 +130,156 @@ Traceback (most recent call last):
   File "/usr/lib/python2.7/email/message.py", line 262, in set_charset
     self._payload = self._payload.encode(charset.output_charset)
 UnicodeEncodeError: 'ascii' codec can't encode character u'\u2019' in position 6: ordinal not in range(128)
+Exception on /order_complete [GET]
+Traceback (most recent call last):
+  File "/home/fg_admin/fitgeek_website/fitgeek_env/local/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/fg_admin/fitgeek_website/fitgeek_env/local/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/fg_admin/fitgeek_website/fitgeek_env/local/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/fg_admin/fitgeek_website/fitgeek_env/local/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/fg_admin/fitgeek_website/fitgeek_env/local/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./server.py", line 305, in order_complete
+    return render_template('order_complete.html')
+  File "/home/fg_admin/fitgeek_website/fitgeek_env/local/lib/python2.7/site-packages/flask/templating.py", line 134, in render_template
+    context, ctx.app)
+  File "/home/fg_admin/fitgeek_website/fitgeek_env/local/lib/python2.7/site-packages/flask/templating.py", line 116, in _render
+    rv = template.render(context)
+  File "/home/fg_admin/fitgeek_website/fitgeek_env/local/lib/python2.7/site-packages/jinja2/environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/fg_admin/fitgeek_website/fitgeek_env/local/lib/python2.7/site-packages/jinja2/environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/fg_admin/fitgeek_website/templates/order_complete.html", line 104, in top-level template code
+    {{ session['gift_certificate_details']['recipient_name'] }}<br><br>
+  File "/home/fg_admin/fitgeek_website/fitgeek_env/local/lib/python2.7/site-packages/jinja2/environment.py", line 389, in getitem
+    return obj[argument]
+UndefinedError: 'flask.sessions.SecureCookieSession object' has no attribute 'gift_certificate_details'
+Exception on /processMessage [POST]
+Traceback (most recent call last):
+  File "/home/fg_admin/fitgeek_website/fitgeek_env/local/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/fg_admin/fitgeek_website/fitgeek_env/local/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/fg_admin/fitgeek_website/fitgeek_env/local/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/fg_admin/fitgeek_website/fitgeek_env/local/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/fg_admin/fitgeek_website/fitgeek_env/local/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./server.py", line 121, in processMessage
+    msg.attach(MIMEText(body, 'plain'))
+  File "/usr/lib/python2.7/email/mime/text.py", line 30, in __init__
+    self.set_payload(_text, _charset)
+  File "/usr/lib/python2.7/email/message.py", line 226, in set_payload
+    self.set_charset(charset)
+  File "/usr/lib/python2.7/email/message.py", line 262, in set_charset
+    self._payload = self._payload.encode(charset.output_charset)
+UnicodeEncodeError: 'ascii' codec can't encode character u'\u2019' in position 400: ordinal not in range(128)
+Exception on /processMessage [POST]
+Traceback (most recent call last):
+  File "/home/fg_admin/fitgeek_website/fitgeek_env/local/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/fg_admin/fitgeek_website/fitgeek_env/local/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/fg_admin/fitgeek_website/fitgeek_env/local/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/fg_admin/fitgeek_website/fitgeek_env/local/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/fg_admin/fitgeek_website/fitgeek_env/local/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./server.py", line 121, in processMessage
+    msg.attach(MIMEText(body, 'plain'))
+  File "/usr/lib/python2.7/email/mime/text.py", line 30, in __init__
+    self.set_payload(_text, _charset)
+  File "/usr/lib/python2.7/email/message.py", line 226, in set_payload
+    self.set_charset(charset)
+  File "/usr/lib/python2.7/email/message.py", line 262, in set_charset
+    self._payload = self._payload.encode(charset.output_charset)
+UnicodeEncodeError: 'ascii' codec can't encode character u'\u2019' in position 400: ordinal not in range(128)
+Exception on /processMessage [POST]
+Traceback (most recent call last):
+  File "/home/fg_admin/fitgeek_website/fitgeek_env/local/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/fg_admin/fitgeek_website/fitgeek_env/local/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/fg_admin/fitgeek_website/fitgeek_env/local/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/fg_admin/fitgeek_website/fitgeek_env/local/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/fg_admin/fitgeek_website/fitgeek_env/local/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./server.py", line 121, in processMessage
+    msg.attach(MIMEText(body, 'plain'))
+  File "/usr/lib/python2.7/email/mime/text.py", line 30, in __init__
+    self.set_payload(_text, _charset)
+  File "/usr/lib/python2.7/email/message.py", line 226, in set_payload
+    self.set_charset(charset)
+  File "/usr/lib/python2.7/email/message.py", line 262, in set_charset
+    self._payload = self._payload.encode(charset.output_charset)
+UnicodeEncodeError: 'ascii' codec can't encode character u'\u2013' in position 311: ordinal not in range(128)
+Exception on /processMessage [POST]
+Traceback (most recent call last):
+  File "/home/fg_admin/fitgeek_website/fitgeek_env/local/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/fg_admin/fitgeek_website/fitgeek_env/local/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/fg_admin/fitgeek_website/fitgeek_env/local/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/fg_admin/fitgeek_website/fitgeek_env/local/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/fg_admin/fitgeek_website/fitgeek_env/local/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./server.py", line 121, in processMessage
+    msg.attach(MIMEText(body, 'plain'))
+  File "/usr/lib/python2.7/email/mime/text.py", line 30, in __init__
+    self.set_payload(_text, _charset)
+  File "/usr/lib/python2.7/email/message.py", line 226, in set_payload
+    self.set_charset(charset)
+  File "/usr/lib/python2.7/email/message.py", line 262, in set_charset
+    self._payload = self._payload.encode(charset.output_charset)
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-11: ordinal not in range(128)
+Exception on /processMessage [POST]
+Traceback (most recent call last):
+  File "/home/fg_admin/fitgeek_website/fitgeek_env/local/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/fg_admin/fitgeek_website/fitgeek_env/local/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/fg_admin/fitgeek_website/fitgeek_env/local/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/fg_admin/fitgeek_website/fitgeek_env/local/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/fg_admin/fitgeek_website/fitgeek_env/local/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./server.py", line 121, in processMessage
+    msg.attach(MIMEText(body, 'plain'))
+  File "/usr/lib/python2.7/email/mime/text.py", line 30, in __init__
+    self.set_payload(_text, _charset)
+  File "/usr/lib/python2.7/email/message.py", line 226, in set_payload
+    self.set_charset(charset)
+  File "/usr/lib/python2.7/email/message.py", line 262, in set_charset
+    self._payload = self._payload.encode(charset.output_charset)
+UnicodeEncodeError: 'ascii' codec can't encode character u'\xa0' in position 3: ordinal not in range(128)
+Exception on /processMessage [POST]
+Traceback (most recent call last):
+  File "/home/fg_admin/fitgeek_website/fitgeek_env/local/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/fg_admin/fitgeek_website/fitgeek_env/local/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/fg_admin/fitgeek_website/fitgeek_env/local/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/fg_admin/fitgeek_website/fitgeek_env/local/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/fg_admin/fitgeek_website/fitgeek_env/local/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "./server.py", line 121, in processMessage
+    msg.attach(MIMEText(body, 'plain'))
+  File "/usr/lib/python2.7/email/mime/text.py", line 30, in __init__
+    self.set_payload(_text, _charset)
+  File "/usr/lib/python2.7/email/message.py", line 226, in set_payload
+    self.set_charset(charset)
+  File "/usr/lib/python2.7/email/message.py", line 262, in set_charset
+    self._payload = self._payload.encode(charset.output_charset)
+UnicodeEncodeError: 'ascii' codec can't encode character u'\u2019' in position 6: ordinal not in range(128)
