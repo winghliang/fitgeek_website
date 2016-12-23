@@ -6496,10 +6496,10 @@ button.close {
   background-repeat: no-repeat;
   background-size: cover;
 }
-/*!                    
+/*!
 Theme Name: ReStart
 THEME STYLES
-================================================================= 
+=================================================================
 */
 /* =Helpers
 -------------------------------------------------------------- */
@@ -9179,7 +9179,7 @@ blockquote p {
 
 .google-maps {
   position: relative;
-  padding-bottom: 40%; 
+  padding-bottom: 40%;
   height: 0;
   overflow: hidden;
   left: 10%;
@@ -9211,7 +9211,7 @@ blockquote p {
 
   #analysis_video {
     position: relative;
-    padding-bottom: 40%; 
+    padding-bottom: 40%;
     height: 0;
     overflow: hidden;
     left: 10%;
@@ -9236,7 +9236,7 @@ blockquote p {
 
   #analysis_video {
     position: relative;
-    padding-bottom: 40%; 
+    padding-bottom: 40%;
     height: 0;
     overflow: hidden;
   }
@@ -9441,4 +9441,8 @@ p.gift_title {
   right: 150px;
   z-index: 101;
   overflow: hidden;
+}
+
+.holiday-hours {
+  color: red;
 }

@@ -53,10 +53,10 @@
                               <ul class="dropdown-menu">
                                    <li><a href="/what-is-my-foot-type/">What Is My Foot Type?</a></li>
                                    <li><a href="/all-about-insoles/">All About Insoles</a></li>
-                                   <li><a href="/types-of-running-shoes/">Types Of Running Shoes</a></li> 
+                                   <li><a href="/types-of-running-shoes/">Types Of Running Shoes</a></li>
                                    <li><a href="/six-tips-when-looking-for-walking-shoes/ ">How to Pick Walking Shoes</a></li>
                                    <li><a href="/popular-running-styles/ ">Popular Running Styles</a></li>
-                                   <li><a href="/common-running-injuries/">Common Running Injuries</a></li>                              
+                                   <li><a href="/common-running-injuries/">Common Running Injuries</a></li>
                               </ul>
                          </li>
                          <li><a href="/gift_cards">Gift Cards</a></li>
@@ -92,7 +92,7 @@
           					<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
           					<p><strong>Your message did not send -- please correct the following in the contact form:</strong></p>
           					<ul>
-          						{% for category, message in messages %}                                        
+          						{% for category, message in messages %}
           							<li class="text-danger"> {{message}} </li>
           						{% endfor %}
           					</ul>
@@ -102,7 +102,7 @@
      				{% if messages[0][0] == 'valid_message' %}
      					<div class="alert alert-success contact-form-message">
      						<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-     						{% for category, message in messages %}                                        
+     						{% for category, message in messages %}
      							<p class="text-center"><strong>{{ message }} </strong></p>
      						{% endfor %}
      					</div>
@@ -137,7 +137,7 @@
 							<abbr title="Phone">Email:</abbr> <a href="mailto:#">info@fitgeeksports.com</a>
 						</address>
 						<address>
-							<abbr title="Hours">Hours:</abbr> M-F: 11am-7pm / Sat: 10am-6pm / <br>Sun: 11am-5pm
+							<abbr title="Hours">Hours:</abbr> M-F: 11am-7pm / Sat: 10am-6pm / <br>Sun: 11am-5pm <br> ** Please see <a href="/hours-and-directions/">HERE</a> for hoiday hours. **
 						</address>
 					</div>
 			</div>
@@ -168,7 +168,7 @@
      						<textarea name="message" id="message" rows="8" class="form-control" required></textarea>
      					</div>
      					<div class="col-sm-12 col-md-12"><br/>
-     						<input type="submit" id="submit_btn" class="btn btn-primary" name="submit" value="Submit Message"></input> 
+     						<input type="submit" id="submit_btn" class="btn btn-primary" name="submit" value="Submit Message"></input>
      				</div>
      			 </form>
 			</div>
@@ -229,26 +229,26 @@
 <script type="text/javascript">
 	// When the window has finished loading create our google map below
 	google.maps.event.addDomListener(window, 'load', init);
-				
+
 	function init() {
      	// The latitude and longitude to center the map (always required)
-     	// To find latitute and longitude use http://universimmedia.pagesperso-orange.fr/geo/loc.htm   
-     	var myLatlng = new google.maps.LatLng(37.32255, -122.04109); 
-     				
+     	// To find latitute and longitude use http://universimmedia.pagesperso-orange.fr/geo/loc.htm
+     	var myLatlng = new google.maps.LatLng(37.32255, -122.04109);
+
      	// Basic options for a simple Google Map
      	var mapOptions = {
 
      		zoom: 15,
 
-     		scrollwheel: false,                    
+     		scrollwheel: false,
      			center: myLatlng,
      			styles: [{'featureType':'water','stylers':[{'visibility':'on'},{'color':'#428BCA'}]},{'featureType':'landscape','stylers':[{'color':'#f2e5d4'}]},{'featureType':'road.highway','elementType':'geometry','stylers':[{'color':'#c5c6c6'}]},{'featureType':'road.arterial','elementType':'geometry','stylers':[{'color':'#e4d7c6'}]},{'featureType':'road.local','elementType':'geometry','stylers':[{'color':'#fbfaf7'}]},{'featureType':'poi.park','elementType':'geometry','stylers':[{'color':'#c5dac6'}]},{'featureType':'administrative','stylers':[{'visibility':'on'},{'lightness':33}]},{'featureType':'road'},{'featureType':'poi.park','elementType':'labels','stylers':[{'visibility':'on'},{'lightness':20}]},{},{'featureType':'road','stylers':[{'lightness':20}]}]
      			};
 
      		var mapElement = document.getElementById('map');
-     				
+
      		var map = new google.maps.Map(mapElement, mapOptions);
-     				
+
      		var marker = new google.maps.Marker({
      			position: myLatlng,
      			map: map,
@@ -257,7 +257,7 @@
 		}
 </script>
 
-<script type="text/javascript" src="../static/js/restart_theme.js"></script> 
+<script type="text/javascript" src="../static/js/restart_theme.js"></script>
 
 </body>
 </html>
